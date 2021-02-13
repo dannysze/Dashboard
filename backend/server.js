@@ -1,4 +1,4 @@
-var serverURL = 'mongodb+srv://danny49825:18346100@cluster0.a02t4.mongodb.net/CSCI2720-dashboard?retryWrites=true&w=majority';
+var serverURL = 'mongodb+srv://danny49825:18346100@cluster0.a02t4.mongodb.net/<dbname>?retryWrites=true&w=majority';
 const express = require("express");
 var mongoose = require("mongoose");
 const https = require('https');
@@ -146,6 +146,7 @@ app.post('/event', function (req, res) {
 });
 
 app.get('/event', function (req, res) { // Retrieve all events
+    console.log("GET");
     Event.find({}, function (err, events) {
         if (err) {
             return res.status(500).json({ error: err })

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 export const NewEventModel = (props) => {
-    const origin = "https://t43456.github.io/Dashboard-Project/"
-    // const origin = "/";
+    // const origin = "https://t43456.github.io/Dashboard-Project/"
+    const origin = "/";
     // console.log(props)
     const initialState = {
         summary: "",

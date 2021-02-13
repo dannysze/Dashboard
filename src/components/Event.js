@@ -7,8 +7,8 @@ import './Event.css'
 
 export const Event = (props) => {
     const userId = 1
-    const origin = "https://t43456.github.io/Dashboard-Project/"
-    // const origin = "/";
+    // const origin = "https://t43456.github.io/Dashboard-Project/"
+    const origin = "/";
     const initialState = {
         eventDetails: {},
         comments: [],

@@ -4,8 +4,8 @@ import { Redirect, Link } from 'react-router-dom'
 import { Loading } from './Loading'
 
 export const EditEvent = (props) => {
-    const origin = "https://t43456.github.io/Dashboard-Project/"
-    // const origin = "/";
+    // const origin = "https://t43456.github.io/Dashboard-Project/"
+    const origin = "/";
     // var event = data.find(ele => ele['event_id'] === parseInt(props.match.params.eventId));
     const initialState = {
         event_summary: "",

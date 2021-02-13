@@ -6,8 +6,8 @@ import { Loading } from './Loading'
 import './DashBoard.css'
 
 export const Favourite = (props) => {
-    const origin = "https://t43456.github.io/Dashboard-Project/"
-    // const origin = "/";
+    // const origin = "https://t43456.github.io/Dashboard-Project/"
+    const origin = "/";
     const userId = 1;
     const initialState = {
         events: [],
