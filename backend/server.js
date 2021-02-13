@@ -146,7 +146,7 @@ app.post('/event', function (req, res) {
 });
 
 app.get('/event', function (req, res) { // Retrieve all events
-    console.log("GET");
+    // console.log("GET");
     Event.find({}, function (err, events) {
         if (err) {
             return res.status(500).json({ error: err })
@@ -215,8 +215,8 @@ app.route('/comment/:eventid/:userid/')
                 var e = new Comment({
                     comment_id: +max_comment + 1,
                     event_id: req.params['eventid'],
-                    // user_id: req.params['userid'],
-                    user: user._id,
+                    user_id: req.params['userid'],
+                    // user: user._id,
                     comment_content: req.body['comment']
                 });
                 e.save((err) => {

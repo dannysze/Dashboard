@@ -169,7 +169,7 @@ export const Event = (props) => {
                                     <td width='200' valign='top' align='center' style={{ border: "4px solid #cccccc", backgroundColor: "#FFFFFF" }}>
                                         User
                                     <br />
-                                        <a >{comment.user.username}</a>
+                                        <a >User A</a>
                                         <br />
                                         <img className="roundrect" src={icon} width="150" height="150" />
                                     </td>
